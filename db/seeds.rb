@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+admin = User.create(:first_name => 'System', :last_name => 'Admin',
+       :email => 'admin@gmail.com', :password => '123456',
+       :password_confirmation => '123456', :source_system_id => 'systemadmin',
+       :source_system => 'LP',:entity_type => "Customer", :target_system => "OPENAM")

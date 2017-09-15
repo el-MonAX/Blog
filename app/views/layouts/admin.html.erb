@@ -11,11 +11,12 @@
   <body>
 
     <div class="container">
-      <nav class="navbar navbar-light bg-faded" style="background-color: #e3f2fd;" >
+      <nav class="navbar navbar-toggleable-mb navbar-inverse bg-inverse" style="background-color: grey;>
+        <a class="navbar-brand" href="#">Админпанель</a>
         <div class="nav">
           <a class="nav-link active" href="<%= posts_path %>">Все статьи</a>
         </div>
-        
+
         <ul class="navbar-nav pull-xs-right">
         <% if user_signed_in? %>
           <li class="nav-item">
